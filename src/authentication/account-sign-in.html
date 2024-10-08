@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="./account-sign-in.css">
+</head>
+<body>
+    <div class="sign-in-form-container">
+        <div class="form-container sign-in">
+            <label for="notify-message" id="notify-email"></label><br>
+            <label for="notify-message" id="notify-password"></label><br>
+            <label for="notify-message" id="notify-otp-key"></label><br>
+
+            <h1>Administration Page</h1>
+            <h3>Welcome to <span class="highlight1">INFINITY</span></h3>
+    
+
+
+
+            <!-- * Put the php file here in ` action ` attribute -->
+            <form action="" onsubmit="return checkInputCredentials()" name="sign-in-form">
+                <label for="email">Admin</label><br>
+                <input type="text"  class="correct" autocomplete="email" name="email" id="input-email"><br>
+                
+                <label for="otp-key" id="otp-key">OTP Key</label><br>
+                <input type="text" class="correct" name="otp-key" id="input-otp-key">
+
+                <label for="password" id="password">Password</label><br>
+                <input type="password" class="correct" name="password" autocomplete="current-password" id="input-password"><br>
+                <img src="../assets/ICON-HIDE-VIEW-0004.png" id="hide-password" alt="">
+                
+                <hr>
+                <input type="submit" value="Log In">
+            </form>
+            <!-- * ^ ^ ^form on up ^ ^ ^ * -->
+
+
+            <img src="../assets/ICON-ADMIN-CROWN-0006.png" id="crowny" alt="">
+
+            <p id="help-desk"> Company Administration Page, if you need any help, you can contact our <span id="help-desk-highlight">Help Desk</span>✨. </p>
+        </div>
+        <div class="image-banner">
+            <img src="../assets/IMG-BANNER-ADMIN-SIGNIN-0002.jpg" alt="">
+            <div class="logo-name-container">
+                <h1>INFINITY</h1>
+                <div class="third-circle"></div>
+            </div>
+            <div class="fourth-circle"></div>
+            <div class="fifth-circle"></div>
+            <div class="crown-container">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <img src="../assets/ICON-ADMIN-CROWN-0005.png" alt="">
+            </div>
+        </div>
+
+       
+    </div>
+
+    <script src="./account-sign-in.js"></script>
+</body>
+</html>

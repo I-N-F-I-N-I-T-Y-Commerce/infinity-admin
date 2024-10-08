@@ -1,0 +1,406 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.sign-up-form-container {
+    height: 620px;
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.sign-in-form-container {
+    height: 620px;
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 135px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.form-container {
+    height: 550px;
+    width: 365px;
+    position: relative;
+}
+
+.form-container label,
+.form-container h1,
+.form-container h3,
+.form-container a {
+    color: #D9D9D9;
+    text-decoration: none;
+}
+
+.image-banner {
+    height: 550px;
+    overflow: hidden;
+    width: 460px;
+    border-radius: 10px 4% 4% 4%;
+    position: relative;
+}
+
+.image-banner::before {
+    content: '';
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Example background */
+    border-radius: 50%; /* Modify to create smooth corners */
+    z-index: 1;
+    box-shadow: -10px -10px 0 #050512;
+}
+
+.image-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 230px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Example background */
+    border-radius: 50%; /* Modify to create smooth corners */
+    z-index: 1;
+    box-shadow: -10px -10px 0 #050512;
+}
+
+.image-banner img {
+    object-fit: cover;
+    height: 560px;
+    width: 460px;
+    position: relative;
+}
+
+.logo-name-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 230px;
+    height: 70px;
+    background-color: #44627C;
+    border-bottom: 13px solid #050512;
+    border-right: 13px solid #050512;
+    border-radius: 10px 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-name-container h1 {
+    font-family: var(--font-boston-bold);
+    font-size: 2rem;
+    color: #EEE1CF;
+}
+
+.logo-name-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Example background */
+    border-radius: 50%; /* Modify to create smooth corners */
+    z-index: 1;
+    box-shadow: -10px 10px 0 #050512;
+}
+
+
+.logo-name-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Example background */
+    border-radius: 50%; /* Modify to create smooth corners */
+    z-index: 1;
+    box-shadow: 10px -10px 0 #050512;
+}
+
+.image-banner .third-circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 10px 10px 0 #050512;
+}
+
+.image-banner .fourth-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    bottom: -2px;
+    right: 110px;
+    z-index: 0;
+    box-shadow: 15px 20px #050512;
+}
+
+.image-banner .fifth-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    bottom: 111px;
+    right: 0;
+    z-index: 0;
+    box-shadow: 20px 20px 0 #050512;
+}
+
+.crown-container {
+    position: absolute;
+    height: 112px;
+    width: 112px;
+    background-color: #503F23;
+    bottom: 0;
+    right: 0;
+    border-left: 13px solid #050512;
+    border-top: 13px solid #050512;
+    border-radius: 20px 0 0 0;
+}
+
+.crown-container .circle1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    bottom: 60;
+    right: 80px;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0 #050512;
+}
+
+.crown-container .circle2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    bottom: 60;
+    right: 0;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 #050512;
+    z-index: 0;
+}
+
+.crown-container .circle3 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    bottom: 0;
+    right: 1;
+    border-radius: 50%;
+    box-shadow: -15px 15px 0 #050512;
+    z-index: 0;
+}
+
+.crown-container img {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 18px;
+    left: 17px;
+    transform: rotate(20deg);
+}
+
+/* * Step in to your Account */
+.sign-in h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #D9D9D9;
+    font-family: var(--font-boston-regular);
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+/* * Welcome to INFINITY */
+.sign-in h3 {
+    margin: 0;
+    font-family: var(--font-boston-extra-light);
+    font-size: .9rem;
+    font-weight: 10;
+}
+
+.sign-in .highlight1 {
+    color: #6CFACD;
+    font-family: var(--font-boston-bold);
+}
+
+.sign-in input {
+    width: 365px;
+    height: 27px;
+    border-radius: 5px;
+    background-color: #050512;
+    color: #D9D9D9;
+    cursor: pointer;
+    position: relative;
+    font-family: var(--font-boston-light);
+    margin-bottom: 5.5%;
+}
+
+.sign-in .correct,
+.sign-up .correct {
+    border: 2px solid #6CFACD;
+    transition: border 0.3s ease;
+}
+
+.sign-in .wrong,
+.sign-up .wrong {
+    border: 2px solid #F6BC72;
+    transition: border 0.9s ease;
+}
+
+.sign-in label {
+    font-family: var(--font-boston-light);
+    font-size: .92rem;
+    display: inline-block;
+    margin-top: 4%;
+    margin-bottom: 2.5%;
+}
+
+.sign-in #otp-key {
+    margin-top: 0;
+}
+
+.sign-in #password {
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+}
+
+.sign-in #password-input {
+    margin-bottom: 5%;
+}
+
+#hide-password {
+    position: absolute;
+    top: 309px;
+    right: 8px;
+    height: 19px;
+    cursor: pointer;
+}
+
+.sign-in #notify-email,
+.sign-in #notify-password,
+.sign-in #notify-otp-key {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #F6BC72;
+    position: absolute;
+    right: 0;
+}
+
+.sign-in #notify-email {
+    top: 177px;
+   
+}
+
+.sign-in #notify-password {
+    top: 332px;
+   
+}
+
+.sign-in #notify-otp-key {
+    top: 253px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    height:36px;
+}
+
+.checkbox {
+    background-color: #050512;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #6CFACD;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkbox-container p {
+    color: #D9D9D9;
+    margin-left: 2%;
+    font-family: var(--font-boston-light);
+    font-size: .8rem;
+}
+
+.sign-in [type='submit'] {
+    margin-top: 2%;
+    background-color: #6CFACD;
+    border: none;
+    color: #050512;
+    font-family: var(--font-boston-regular);
+    font-size: .98rem;
+    height: 35px;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+
+.sign-up-container {
+    width: 365px;
+}
+
+hr {
+    height: 2px;
+    border-radius: 5px;
+    background-color: #DED9CE;
+}
+
+#help-desk {
+    color:#EEE1CF ;
+    font-family: var(--font-boston-light);
+    font-size: .92rem;
+}
+
+#help-desk-highlight {
+    color: #6CFACD;
+    font-family: var(--font-boston-bold);
+}
+
+@keyframes floaty {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-6px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+#crowny {
+    position: absolute;
+    height: 15px;
+    left: 2px;
+    top: 48px;
+    animation: floaty 3s ease-in-out infinite;
+}
