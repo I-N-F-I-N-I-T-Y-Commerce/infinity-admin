@@ -1,0 +1,129 @@
+.navigation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1135px;
+    font-family: var(--font-boston-regular);
+    background-color: var(--color-gray-200);
+    gap: 20px;
+}
+
+.header {
+    border-bottom: 2px solid var(--color-gray-100);
+    padding: 32px 0 28px 0;
+    display: flex;
+    width: 100%;
+    max-width: 1135px;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.branding {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 8px;
+}
+
+.tag-name {
+    font-family: var(--font-boston-bold);
+    font-size: 1.4rem;
+    color: white;
+}
+
+.logo-icon {
+    height: 22px;
+    top: 0;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.logo-container {
+    width: 80.1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.sign-up {
+    text-decoration: none;
+    font-family: var(--font-boston-light);
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #6cfacd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1165px;
+    width: 100%;
+    gap: 0;
+}
+
+.button-container {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard img,
+#transaction img,
+#feedbacks img,
+#products img {
+    margin-right: 8%;
+}
+
+#dashboard img {
+    width: 20px;
+}
+
+#transaction img {
+    width: 35px;
+    margin-right: 6%;
+}
+
+#feedbacks img {
+    width: 25px;
+}
+
+#products img {
+    width: 28px;
+    margin-right: 10%;
+}
+
+/* * Navigation Button */
+.button-container p{
+    color: beige;
+    margin: 0;
+    font-family: var(--font-boston-light);
+    font-size: 1.1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.button-container:hover p {
+    color: #6cfacd;
+    transition: color 0.2s ease-in-out;
+}
+
+.on-page p {
+    color: #6cfacd;
+}
+
+.navigator a {
+    text-decoration: none;
+}
+
