@@ -6,6 +6,7 @@
 ## Changelogs <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Roller%20Coaster.png" alt="Roller Coaster" align="center" width="30" height="30" />
 * ✅ ` Added Admin Navigation `
 * ✅ ` Added Templates `
+* ✅ ` Added Dashboard ( In Polish ) `
 
 
 ## On Going <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Cloud%20with%20Lightning%20and%20Rain.png" alt="Cloud with Lightning and Rain" width="30" height="30" align="center" />
