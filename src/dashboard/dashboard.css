@@ -12,5 +12,62 @@ main .main-container {
     max-width: 1135px;
     width: 100%;
     gap: 0px;
-    background-color: aqua;
+    background-color: #040410;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: 
+      "earnings dashboard dashboard dashboard"
+      "earnings dashboard dashboard dashboard"
+      "products dashboard dashboard dashboard"
+      "products feedback feedback activity-log"
+      "products feedback feedback activity-log";
+    grid-gap: 20px;
+    /* padding: 20px;  */
+  }
+  
+.grid-container .box {
+    background-color: #040410;
+    border: 1px solid #6CFACD;
+    padding: 20px;
+    color: white;
+    font-family: var(--font-boston-bold);
+    font-size: 1.4rem;
+  }
+
+
+
+  .earnings {
+    grid-area: earnings;
+    width: 270px;
+  }
+  
+  .dashboard {
+    grid-area: dashboard;
+    width: 760px;
+    height: 500px;
+    color: #F6BC72 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .products {
+    grid-area: products;
+    border: 1px solid #F6BC72 !important;
+    color: #F6BC72 !important;
+  }
+  
+  .feedback-status {
+    grid-area: feedback;
+    width: 430px;
+  }
+  
+  .activity-log-status {
+    grid-area: activity-log;
+    width: 265px;
+  }
+  
