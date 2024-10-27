@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../navigator/navigation.css">
     <link rel="stylesheet" href="./template.css">
     <link rel="stylesheet" href="../global.css">
+    <link rel="stylesheet" href="transaction.css">
+
     <title>Transaction</title>
 </head>
 <body>
@@ -56,11 +58,97 @@
         <script src="../navigator/navigator.js"></script>
     </div>
     <!-- * navigation -->
-
     <main>
         <!-- TODO: Put your elements inside of the  `main-container` -->
         <div class="main-container">
-            <!-- * Here -->
+            <section class="overview-cards">
+                <div class="card">
+                    <h3>Earnings</h3>
+                    <p>0.00</p>
+                </div>
+                <div class="card">
+                    <h3>Pending</h3>
+                    <p>0.00</p>
+                </div>
+                <div class="card">
+                    <h3>On Cart</h3>
+                    <p>0 items</p>
+                </div>
+                <div class="card">
+                    <h3>Canceled Deliveries</h3>
+                    <p>0</p>
+                </div>
+            </section>        
+            <!-- TODO: transaction table -->
+            <section class="transaction">
+                <div class="transaction-header">
+                    <p>Date</p>
+                    <p>Username</p>
+                    <p>Method</p>
+                    <p>Payment</p>
+                    <p>Status</p>
+                    <p>Items</p>
+                </div>
+            
+                <div class="transaction-row">
+                    <div class="transaction-col"><img src="../assets/calendar 1.png">10 Sept 2024</div>
+                    <div class="transaction-col"><img src="../assets/profile-user (1).png">halimaw</div>
+                    <div class="transaction-col"><img src="../assets/money.png">Cash on Delivery</div>
+                    <div class="transaction-col cuba"><img src="../assets/cuba.png">25,000</div>
+                    <div class="transaction-col"><img src="../assets/check-box.png">Fulfilled</div>
+                    <div class="transaction-col"><img src="../assets/shopping-bag.png">10</div>
+                </div>
+            
+                <div class="transaction-row">
+                    <div class="transaction-col"><img src="../assets/calendar 1.png">10 Sept 2024</div>
+                    <div class="transaction-col"><img src="../assets/profile-user (1).png">halimaw</div>
+                    <div class="transaction-col"><img src="../assets/money.png">Cash on Delivery</div>
+                    <div class="transaction-col cuba"><img src="../assets/cuba.png">25,000</div>
+                    <div class="transaction-col"><img src="../assets/check-box.png">Fulfilled</div>
+                    <div class="transaction-col"><img src="../assets/shopping-bag.png">10</div>
+                </div>
+
+                <div class="transaction-row">
+                    <div class="transaction-col"><img src="../assets/calendar 1.png">10 Sept 2024</div>
+                    <div class="transaction-col"><img src="../assets/profile-user (1).png">halimaw</div>
+                    <div class="transaction-col"><img src="../assets/money.png">Cash on Delivery</div>
+                    <div class="transaction-col cuba"><img src="../assets/cuba.png">25,000</div>
+                    <div class="transaction-col"><img src="../assets/check-box.png">Fulfilled</div>
+                    <div class="transaction-col"><img src="../assets/shopping-bag.png">10</div>
+                </div>
+
+                <div class="transaction-row">
+                    <div class="transaction-col"><img src="../assets/calendar 1.png">10 Sept 2024</div>
+                    <div class="transaction-col"><img src="../assets/profile-user (1).png">halimaw</div>
+                    <div class="transaction-col"><img src="../assets/money.png">Cash on Delivery</div>
+                    <div class="transaction-col cuba" ><img src="../assets/cuba.png">25,000</div>
+                    <div class="transaction-col"><img src="../assets/check-box.png">Fulfilled</div>
+                    <div class="transaction-col"><img src="../assets/shopping-bag.png">10</div>
+                </div>
+
+                <div class="transaction-row">
+                    <div class="transaction-col"><img src="../assets/calendar 1.png">10 Sept 2024</div>
+                    <div class="transaction-col"><img src="../assets/profile-user (1).png">halimaw</div>
+                    <div class="transaction-col"><img src="../assets/money.png">Cash on Delivery</div>
+                    <div class="transaction-col cuba"><img src="../assets/cuba.png">25,000</div>
+                    <div class="transaction-col"><img src="../assets/check-box.png">Fulfilled</div>
+                    <div class="transaction-col"><img src="../assets/shopping-bag.png">10</div>
+                </div>
+            
+                <!-- Repeat for other transactions -->
+            </section>
+            <section class="navbar pagination">
+                <div class="search-bar">
+                    <form action="your_search_endpoint.php" method="GET"> <!-- Change the action to your search handling URL -->
+                        <div class="image-container">
+                            <button type="submit" id="search-btn" style="background: none; border: none;"> <!-- Change to button for better semantics -->
+                                <img src="../assets/loupe 1.png">
+                            </button>
+                        </div>
+                        <input class="inp-search" type="text" name="search" placeholder="             Search" required> <!-- Add name attribute for form submission -->
+                    </form>
+                </div>
+            </section>
         </div>
     </main>
 </body>
