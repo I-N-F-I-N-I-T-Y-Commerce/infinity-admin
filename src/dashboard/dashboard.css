@@ -41,7 +41,7 @@ main .main-container {
 
 
   .earnings {
-    grid-area: earnings;
+    grid-area: earnings; 
     width: 270px;
   }
   
@@ -56,7 +56,7 @@ main .main-container {
   }
   
   .products {
-    grid-area: products;
+    grid-area: products ;
     border: 1px solid #F6BC72 !important;
     color: #F6BC72 !important;
   }
@@ -71,3 +71,12 @@ main .main-container {
     width: 265px;
   }
   
+  
+
+.box a {
+  display: block; 
+  width: 100%; 
+  height: 100%; 
+  text-decoration: none; 
+  color: inherit; 
+}
