@@ -33,6 +33,7 @@ const notify = (formInputName, idName, message) => {
 }
 
 const checkInputCredentials = () => {
+    
     const form = document.forms['sign-in-form'];
     // * admin talaga to tinatamad na me magbago sa css haha ✌️✌️
     const admin = form['email'].value;
