@@ -284,7 +284,7 @@ body {
     margin-bottom: 2.5%;
 }
 
-.sign-in #otp-key {
+.sign-in #email {
     margin-top: 0;
 }
 
@@ -305,9 +305,9 @@ body {
     cursor: pointer;
 }
 
-.sign-in #notify-email,
+.sign-in #notify-adminname,
 .sign-in #notify-password,
-.sign-in #notify-otp-key {
+.sign-in #notify-email {
     margin-top: 0;
     margin-bottom: 0;
     color: #F6BC72;
@@ -315,7 +315,7 @@ body {
     right: 0;
 }
 
-.sign-in #notify-email {
+.sign-in #notify-adminname {
     top: 177px;
    
 }
@@ -325,7 +325,7 @@ body {
    
 }
 
-.sign-in #notify-otp-key {
+.sign-in #notify-email {
     top: 253px;
 }
 

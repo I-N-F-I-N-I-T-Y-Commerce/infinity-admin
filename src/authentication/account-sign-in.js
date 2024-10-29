@@ -35,23 +35,35 @@ const notify = (formInputName, idName, message) => {
 const checkInputCredentials = () => {
     
     const form = document.forms['sign-in-form'];
-    // * admin talaga to tinatamad na me magbago sa css haha ✌️✌️
-    const admin = form['email'].value;
-    const otpKey = form['otp-key'].value
+    const admin = form['adminname'].value;
+    const email = form['email'].value
     const password = form['password'].value 
 
-    notify(admin, 'email','* Admin name is needed 🏮' )
-    notify(otpKey, 'otp-key', '* OTP is needed 🔑')
+    notify(admin, 'adminname','* Admin name is needed 🏮' )
+    notify(email, 'email', '* Email is needed 🔑')
     notify(password, 'password', '* Password is needed 🔒')
 
-    if (!admin || !otpKey || !password) return false
+    if (!admin || !email || !password) return false
 
     return true
 }
 
+const autharization = () => {
+    const form = document.forms["sign-in-form"]
+
+    form.addEventListener('submit',(event) => {
+        const inputValid = checkInputCredentials()
+
+        if (!inputValid) {
+            event.preventDefault()
+        }
+    })
+}
 
 const main = () => {
     hidePassword()
+
+    autharization()
 }
 
 main()
