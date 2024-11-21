@@ -3,14 +3,358 @@ main {
     justify-content: center;
     align-items: center;
     height: auto;
+    flex-direction: column;
 }
 
 main .main-container {
-    height: auto;
+    /* height: auto; */
     margin-top: 3%;
-    margin-bottom: 5%;
-    max-width: 1135px;
-    width: 100%;
+    /* margin-bottom: 5%; */
+    /* max-width: 1135px; */
+    /* width: 100%; */
     gap: 0px;
-    background-color: aqua;
+    background-color: #040410;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+    font-family: var(--font-boston-regular);
+}
+
+/* .container {
+    display: flex;
+} */
+
+.box1 {
+    /* max-width: 1135px; */
+    height: 400px;
+    background-color: #040410;
+    border-bottom: 2px solid var(--color-gray-100);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr ;
+    grid-template-areas: 
+    "reviews good-reviews"
+    "reviews good-reviews";
+    grid-gap: 20px;
+    padding-bottom: 50px;
+}
+
+.product-status,
+.product-history {
+    background-color: #040410;
+    border: 3px solid #6CFACD;
+    border-radius: 5px;
+    color: #6CFACD;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+
+
+.product-status {
+    grid-area: reviews;
+    display: flex;    
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.history-wrapper {
+    row-gap: 5px;
+}
+
+.product-title,
+.history-title {
+    width: auto;
+    height: 50px;
+    color: white;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#interacton {
+    width: 30px;
+    /* margin-left: 440px; */
+}
+
+.status p,
+.product-stocks p {
+    color: white;
+    font-size: 1.4em;
+
+}
+
+.product-history p,
+.bad-reviews p {
+    color: white;
+    font-size: 1.25rem;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content.details {
+    display: flex;
+    gap: 2.5rem;
+
+}
+
+
+.product-history {
+    grid-area: good-reviews;
+    display: flex;    
+    justify-content: flex-start;    
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.earnings .box {
+    margin-bottom: 2.25rem; /* Adjust the gap as needed */
+    border-radius: 0.25rem;
+}
+
+/* Optional: Remove the margin for the last element */
+.earnings .box:last-child {
+    margin-bottom: 0;
+}
+
+.earnings .box:nth-child(even) {
+    border-color: #F6BC72; /* Adjust the color as needed */
+}
+
+.dashboard .pannel {
+    flex: 1; /* Make panels flexible and share space equally */
+    max-width: 100%; /* Set a maximum width */
+    height: 100%; /* Adjust height based on content */
+    /* padding: 10px; Add internal spacing */
+    box-sizing: border-box; /* Include padding in width/height */
+    padding: 20px;
+
+}
+
+.dashboard .pannel.right {
+    border-left: 2px solid #6CFACD; /* Border styling */
+    border-radius: 0.75rem;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas:
+      "table interactions interactions" 
+      "earnings dashboard navigations"
+      "earnings dashboard navigations";
+    grid-gap: 20px;
+    height: 600px;
+    font-family: var(--font-boston-regular);
+    /* padding: 20px;  */
+    
+  }
+
+.tab-title {
+    padding: 3rem;
+    padding-left: 0;
+    grid-area: table;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.interactions {
+    padding: 3rem;
+    padding-left: 0;
+    grid-area: interactions;
+    color: white;
+    font-size: 1.25rem;
+}
+  
+.grid-container .box {
+    background-color: #040410;
+    border: 1px solid #6CFACD;
+    padding: 20px;
+    color: white;
+    font-family: var(--font-boston-bold);
+    font-size: 1.4rem;
+    border: 2px solid #6CFACD; /* Border styling */
+
+  }
+
+
+
+  .earnings {
+    grid-area: earnings; 
+    width: 225px;
+    border-radius: 0.75rem;
+    height: 400px;
+  }
+  
+  .dashboard {
+    grid-area: dashboard;
+    width: 800px;
+    color: #F6BC72 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6CFACD; /* Border styling */
+    border-radius: 0.75rem;
+
+  }
+
+
+
+  /* Container for the navigator */
+.navigations {
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: navigations;
+    gap: 2rem; /* Add space between elements */
+    border-radius: 8px; /* Rounded edges */
+}
+
+/* Shared styles for buttons and table number */
+.sqr {
+    all: unset;
+    grid-area: navigations;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sqr img {
+    width: 43px;
+    height: 43px;
+}
+
+.sqr:nth-child(2) {
+    border: 2px solid #6CFACD; /* Border styling */
+}
+
+
+
+
+
+
+
+
+label {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.tag-title {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+#shoe-image-link {
+    background-color: transparent;
+    color: white;
+    width: 300px; /* Adjust the width */
+    height: 80px; /* Adjust the height */
+    border: 2px solid #6CFACD; /* Border styling */
+    padding: 10px; /* Optional: Add padding for better text spacing */
+    resize: none; /* Prevent users from resizing the textarea */
+    border-radius: 0.275rem;
+}
+
+#shoe-details {
+    background-color: transparent;
+    color: white;
+    width: 300px; /* Adjust the width */
+    height: 150px; /* Adjust the height */
+    border: 2px solid #6CFACD; /* Border styling */
+    padding: 10px; /* Optional: Add padding for better text spacing */
+    resize: none; /* Prevent users from resizing the textarea */
+    border-radius: 0.275rem;
+}
+
+
+.pannel.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-1, .wrapper-2, .wrapper-3, .wrapper-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#shoe-name-input, #brand-input, #speciality-dropdown, #category-dropdown, #price-input, #stock-input, #exp-date-input, #txt {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+#brand-input, #speciality-dropdown, #category-dropdown, #price-input, #stock-input, #exp-date-input, #txt {
+    border: 1px solid #6CFACD; /* Border styling */
+    height: 35px;
+    border-radius: 0.275rem;
+}
+
+.brand {
+    font-size: 1rem;
+    font-family: var(--font-boston-regular);
+
+}
+#brand-input {
+    width: 100px;
+}
+
+#shoe-name-input {
+    border: 0;
+    height: 35px;
+    border-bottom: 1px solid #222020;
+    width: 230px;
+}
+
+#speciality-dropdown, #category-dropdown, #price-input, #stock-input, #exp-date-input, #txt {
+    width: 160px; /* Adjust the width */
+}
+
+#txt {
+    background-color: transparent;
+    color: white;
+    width: 160px; /* Adjust the width */
+    height: 80px; /* Adjust the height */
+    border: 2px solid #6CFACD; /* Border styling */
+    padding: 10px; /* Optional: Add padding for better text spacing */
+    resize: none; /* Prevent users from resizing the textarea */
+    border-radius: 0.275rem;
+}
+
+.button-submit {
+    display: flex;
+    justify-content: right;
+}
+
+#submit {
+    text-decoration: none;
+    color: #6CFACD;
+    font-size: 0.75rem;
+    font-family: var(--font-boston-regular);
+    padding: 1rem 2rem 1rem;
+    margin-right: 7rem;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #6CFACD;
 }
